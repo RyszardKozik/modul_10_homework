@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotes</title>
+</head>
+<body>
+    <h2>Quotes</h2>
+    <ul>
+        {% for quote in object_list %}
+            <li>"{{ quote.text }}" - {{ quote.author.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
